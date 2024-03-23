@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Lost Emerald", sans-serif; */
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 70px;
+  background-image: url(./images/pexels-ella-olsson-1640777.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+}
+header img {
+  width: 50px;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+nav ul li {
+  color: black;
+  font-family: "Lost Emerald", sans-serif;
+  color: #ffffff;
+}
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+h1 {
+  font-size: 55px;
+  color: #ffffff;
+  font-family: "League Spartan", sans-serif;
+}
+.hero p {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "poppins", sans-serif;
+}
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(216, 215, 215, 0.5);
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.about svg {
+  color: #000;
+  margin: 0 20px;
+  transition: 0.4s ease-in-out;
+}
+.about svg:hover {
+  color: #f6f6f6;
+}
+.text {
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+}
+.service {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #ffffff;
+  padding: 50px;
+}
+.service > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.service img {
+  width: 500px;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "League Spartan", sans-serif;
+}
+.service ul {
+  margin-left: 70px;
+  list-style: none;
+}
+.service ul li {
+  font-family: "Lost Emerald";
+  margin: 10px 0;
+  font-size: 25px;
+}
+.reviewContainer {
+  width: 100%;
+  padding: 50px;
+  min-height: 70vh;
+}
+.review {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.review > div {
+  width: 400px;
+  padding: 20px;
+  transition: 0.4s ease-in-out;
+}
+.review > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0 35px 0;
+  text-align: center;
+}
+.review p {
+  margin-bottom: 30px;
+  font-family: "poppins", serif;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #636363;
+}
+.user {
+  width: 100%;
+  font-size: 17px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Lost Emerald", sans-serif;
+  color: #636363;
+}
+footer {
+  padding: 50px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  align-items: flex-start;
+  border-top: 1px solid black;
+}
+footer img {
+  width: 60px;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  font-family: "poppins", serif;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+footer li:hover {
+  text-decoration: underline;
+}
+footer p {
+  font-weight: 600;
+  font-size: 18px;
+  user-select: none;
+  line-height: 140%;
+  color: #000;
+  font-family: "League Spartan", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .service img {
+    width: 300px;
+  }
+  .service > div {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .service ul {
+    margin-left: 0;
+  }
+  .service {
+    padding: 10px;
+  }
+  footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .text {
+    width: 100%;
+    padding: 0;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+  .hero {
+    padding: 20px;
+    align-items: flex-end;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .hero p {
+    margin-bottom: 17px;
+  }
+  .reviewContainer {
+    padding: 20px;
+  }
+}
